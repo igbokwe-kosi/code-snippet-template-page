@@ -1,0 +1,149 @@
+@import 'https://unpkg.com/open-props';
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth !important;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--font-size-fluid-1);
+  font-weight: 500;
+  background-color: #f0f0f0;
+}
+
+.mt-lg {
+  margin-top: clamp(6.4vh, 6.4rem, 7.2vh) !important;
+}
+.btn {
+  text-decoration: none;
+  font-family: inherit;
+  transition: all 300ms;
+}
+.btn--sign-in {
+  color: #444;
+  margin-bottom: 1.6rem;
+
+  border-bottom: 2px solid transparent;
+}
+
+.btn--sign-in:hover {
+  border-color: currentColor;
+}
+
+.grey {
+  color: #999;
+}
+
+.btn--cta {
+  background-color: #111;
+  padding: max(1.2rem, 1.2vh);
+  color: #f0f0f0;
+  border: 2px solid #111;
+  border-radius: var(--radius-2);
+}
+
+.btn--cta:hover {
+  color: #111;
+  padding: max(1.2rem, 1.2vh);
+  background-color: #f0f0f0;
+}
+
+.btn svg {
+  margin-bottom: -0.7rem;
+}
+.text {
+  line-height: 1.8;
+  /* font-size: 1.8rem; */
+  text-align: center;
+  max-width: 70rem;
+  color: #474747;
+}
+.heading-primary {
+  text-align: center;
+  letter-spacing: -0.3rem;
+  font-weight: var(--font-weight-7);
+  font-size: clamp(4.5vw, 4.5rem, 5.5vw);
+}
+.heading-secondary {
+  font-size: clamp(3.5rem, 4vw, 4rem);
+}
+.header {
+  background: url(../Assets/Background.png);
+  background-size: cover;
+  padding: clamp(3.5vh, 3.5rem, 5vh) 6.4rem 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 2vh 0 0; */
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: min(3.5vh, 3.5rem);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0 0;
+  margin: 0 auto;
+  max-width: 60vw;
+  gap: clamp(2.5vh, 2.5rem, 3vh);
+  /* width: var(--size-fluid-10); */
+}
+
+.hero__img {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  font-weight: var(--font-weight-6);
+  padding: min(4vw, 4rem);
+}
+
+.main__text-box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(2.5vh, 2.5rem, 3vh);
+  margin-right: min(4vw, 4rem);
+}
+
+.main__text-box .text {
+  text-align: left;
+}
+
+.main__img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  padding: min(4vw, 4rem);
+}
+
+.footer__link {
+  color: hsl(0, 0%, 60%);
+}
+
+.footer__link:hover,
+.footer__link:active {
+  color: hsl(0, 0%, 0%);
+}
