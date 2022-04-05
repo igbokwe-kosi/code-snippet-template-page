@@ -66,9 +66,9 @@ body {
 }
 .heading-primary {
   text-align: center;
-  letter-spacing: -0.3rem;
+  /* letter-spacing: -0.3rem; */
   font-weight: var(--font-weight-7);
-  font-size: clamp(4.5vw, 4.5rem, 5.5vw);
+  font-size: clamp(4.5rem, 4.5vw, 5.5rem);
 }
 .heading-secondary {
   font-size: clamp(3.5rem, 4vw, 4rem);
@@ -124,6 +124,12 @@ body {
   justify-content: center;
   gap: clamp(2.5vh, 2.5rem, 3vh);
   margin-right: min(4vw, 4rem);
+}
+
+.main__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main__text-box .text {
