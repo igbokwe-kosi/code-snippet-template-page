@@ -1,0 +1,68 @@
+/* Hamburger Menu */
+.btn--menu {
+  display: none;
+  position: fixed;
+  top: 2.5em;
+  right: 10%;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media (max-width: 56.25em) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .main {
+    grid-template-columns: 1fr;
+    gap: clamp(2.5vh, 2.5rem, 3vh);
+  }
+  .main__text-box {
+    margin: auto;
+    /* align-items: center; */
+  }
+  .main__img-box {
+    grid-row: -1;
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .btn--menu {
+    display: block;
+    z-index: 2;
+  }
+  .header {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .main-nav {
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    gap: 10vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Assets/Background.png);
+
+    transition: all 500ms cubic-bezier(0, 0.99, 0, 1.33);
+  }
+  .hide {
+    transform: translate(50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
